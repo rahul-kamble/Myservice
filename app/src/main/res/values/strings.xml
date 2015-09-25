@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ControlApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Add New Time</string>
+    <string name="title_activity_launch">Launch</string>
+    <string name="title_activity_add_time">AddTIme</string>
+    <string name="action_add_time" />
+    <string name="title_activity_block_url">BlockUrlActivity</string>
+    <string name="title_activity_display_blocked_url">DIsplayBlockedUrlActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="device_description" />
+    <string name="device_admin_label" />
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="action_sign_in" />
+    <string name="prompt_email" />
+    <string name="prompt_password" />
+    <string name="title_activity_app_list">AppListActivity</string>
+
+</resources>

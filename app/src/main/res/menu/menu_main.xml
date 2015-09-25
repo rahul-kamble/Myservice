@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/block_url"
+        android:orderInCategory="100"
+        android:title="Block Url"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/hide_app"
+        android:orderInCategory="100"
+        android:title="Hide App "
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/unHide_app"
+        android:orderInCategory="100"
+        android:title="UnHide App "
+        app:showAsAction="always" />
+</menu>

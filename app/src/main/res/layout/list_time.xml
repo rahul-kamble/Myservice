@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:text="Start time   :" />
+
+    <TextView
+        android:id="@+id/edtStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/start"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:text="Start time"></TextView>
+
+    <TextView
+        android:id="@+id/end"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/start"
+        android:padding="5dp"
+        android:text="End time     :" />
+
+    <TextView
+        android:id="@+id/edtEndStime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtStartTime"
+        android:layout_toRightOf="@+id/end"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:text="Start time" />
+
+
+</RelativeLayout>

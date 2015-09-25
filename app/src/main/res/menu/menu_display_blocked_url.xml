@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/block_url"
+        android:icon="@mipmap/add_time"
+        android:showAsAction="ifRoom"
+        android:title="Block Url" />
+</menu>
