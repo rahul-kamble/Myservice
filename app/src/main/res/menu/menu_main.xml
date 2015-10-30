@@ -8,6 +8,16 @@
         android:title="Block Url"
         app:showAsAction="always" />
     <item
+        android:id="@+id/data_limit"
+        android:orderInCategory="100"
+        android:title="Add Data Limit "
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/show_data_limit"
+        android:orderInCategory="100"
+        android:title="Show Data Limit "
+        app:showAsAction="always" />
+    <item
         android:id="@+id/hide_app"
         android:orderInCategory="100"
         android:title="Hide App "
@@ -17,4 +27,5 @@
         android:orderInCategory="100"
         android:title="UnHide App "
         app:showAsAction="always" />
+
 </menu>

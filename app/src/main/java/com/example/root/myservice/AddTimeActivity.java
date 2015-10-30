@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.example.root.myservice.databse.MydatabaseHelper;
 import com.example.root.myservice.modelClass.MasterTime;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 
 
@@ -33,6 +34,7 @@ public class AddTimeActivity extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_add_time);
         sharedPreferences = getSharedPreferences("pckName", MODE_PRIVATE);
         packageName = sharedPreferences.getString("packageName", null);
+
         Log.e("p", packageName);
         getActionBar().setTitle(packageName);
         mDb = new MydatabaseHelper(this);
@@ -138,12 +140,25 @@ public class AddTimeActivity extends Activity implements View.OnClickListener {
                     } else {
                         string1 = s1[0] + ":" + s1[1] + " " + sub1[1];
                     }
-                    MasterTime masterTime = new MasterTime();
-                    masterTime.setPackege_name(packageName);
-                    masterTime.setStart_time(string);
-                    masterTime.setEnd_time(string1);
-                    mDb.addTime(masterTime);
-                    finish();
+                    ArrayList<MasterTime> masterTimes = mDb.readTimingOfPackage(packageName);
+                    boolean isPresent = false;
+                    for (int index = 0; index < masterTimes.size(); index++) {
+                        if (masterTimes.get(index).getStart_time().equals(string) || masterTimes.get(index).equals(string1)) {
+                            isPresent = true;
+                        }
+
+                    }
+                    if (isPresent == false) {
+                        MasterTime masterTime = new MasterTime();
+                        masterTime.setPackege_name(packageName);
+                        masterTime.setStart_time(string);
+                        masterTime.setEnd_time(string1);
+                       long ig= mDb.addTime(masterTime);
+                        Log.e("S",""+ig);
+                        finish();
+                    } else {
+                        Toast.makeText(AddTimeActivity.this, "time already exits!", Toast.LENGTH_SHORT).show();
+                    }
                 } else {
                     Toast.makeText(AddTimeActivity.this, "please select time !", Toast.LENGTH_SHORT).show();
                 }

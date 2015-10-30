@@ -5,7 +5,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.root.myservice.DIsplayBlockedUrlActivity">
+    tools:context="com.example.root.myservice.ShowBlockedUrlActivity">
 
     <TextView android:layout_width="wrap_content"
         android:id="@+id/txtBlockedUrl"

@@ -17,5 +17,10 @@
     <string name="prompt_email" />
     <string name="prompt_password" />
     <string name="title_activity_app_list">AppListActivity</string>
+    <string name="title_activity_data_usage_limit">DataUsageLimitActivity</string>
+    <string name="title_activity_add_data_limit">AddDataLimitActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

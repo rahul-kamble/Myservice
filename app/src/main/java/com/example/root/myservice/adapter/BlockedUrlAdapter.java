@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.example.root.myservice.DIsplayBlockedUrlActivity;
+import com.example.root.myservice.ShowBlockedUrlActivity;
 import com.example.root.myservice.R;
 import com.example.root.myservice.modelClass.BlockUrl;
 
@@ -62,7 +62,7 @@ public class BlockedUrlAdapter extends BaseAdapter {
         convertView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-                DIsplayBlockedUrlActivity blockedUrlActivity = (DIsplayBlockedUrlActivity) context;
+                ShowBlockedUrlActivity blockedUrlActivity = (ShowBlockedUrlActivity) context;
                 blockedUrlActivity.onLongClick(position);
                 return false;
             }
